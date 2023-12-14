@@ -1,0 +1,121 @@
+.about {
+
+  .secContainer {
+
+    .title {
+      color: var(--blackColor);
+      line-height: 1.5rem;
+      text-align: center;
+      padding-bottom: 2rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    .mainContent {
+      gap: 1rem;
+
+      .singleItem {
+        text-align: center;
+
+        img {
+          //background: rgba(247,144,54,0.245);
+          width: 100px;
+          padding: 1rem;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        h3 {
+          font-weight: 700;
+          color: var(--blackColor);
+          padding: .5rem;
+        }
+
+        p {
+          font-size: 14px;
+          color: var(--textColor);
+          font-weight: 500;
+          padding-bottom: .5rem;
+        }
+      }
+    }
+
+    .videoCard {
+      margin-top: 2rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)),
+      url("https://images.pexels.com/photos/14776390/pexels-photo-14776390.jpeg?auto=compress&cs=tinysrgb&w=600");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 30px;
+      .cardContent {
+        gap: 2rem;
+        padding: 2rem 1rem;
+
+        h2 {
+          color: var(--whiteColor);
+          font-weight: 600;
+        }
+
+        p {
+          color: var(--whiteColor);
+          opacity: .7;
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: 0.8px;
+        }
+      }
+
+      .cardVideo {
+        border: 2px solid var(--whiteColor);
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 720px) {
+.about{
+  .secContainer{
+
+    .videoCard{
+
+      .cardContent{
+        gap: 1rem;
+        padding: 4rem 2rem;
+        h2{
+          font-size: 2rem;
+        }
+        p{
+          opacity: .7;
+          font-size: 15px;
+        }
+      }
+    }
+    .videoCard{
+
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2,1fr)!important;
+    }
+  }
+}
+}
+@media screen and (min-width: 720px) {
+  .about{
+    .secContainer{
+      .mainContent{
+        padding: 2.5rem 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+.home {
+  height: 80vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)),
+  url("https://i.redd.it/m6y3b2fkyie51.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+
+  .home-text {
+    text-align: center;
+
+    h1 {
+      color: var(--whiteColor);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+
+    p {
+      color: var(--whiteColor);
+      opacity: .9;
+      font-size: 13px;
+      padding: 0.7rem 0;
+      margin: auto;
+      text-align: center;
+      font-weight: 300;
+      max-width: 70%;
+    }
+
+    button {
+      padding: .6rem 1.5rem;
+    }
+  }
+
+  .home-card {
+    width: 80%;
+    border-radius: 10px;
+    padding: 2rem;
+    background: var(--whiteColor);
+    position: absolute;
+    gap: 1rem;
+    justify-content: center;
+    bottom: -35%;
+    transform: translate(-50%);
+    left: 50%;
+    box-shadow: 0 2px 8px 4px rgba(179, 178, 178, 0.45);
+    //display: flex;
+    //flex-wrap: wrap;
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        display: block;
+        color: var(--textColor);
+        font-weight: 500;
+        font-size: 13px;
+        padding-bottom: .4rem;
+      }
+
+      input {
+        width: 100%;
+        background: var(--inputColor);
+        border: none;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 500;
+        outline: none;
+
+        &::placeholder {
+          font-size: 13px;
+          font-weight: 400;
+          opacity: .5;
+        }
+
+      }
+
+    }
+
+    button {
+      font-weight: 600;
+      width: 100%;
+      padding: .6rem 1.5rem;
+
+      &:hover {
+        background-color: var(--HoverColor);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .home {
+
+    .home-card {
+      bottom: -100px;
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+
+      .btn {
+        transform: translateY(15px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+
+  .home {
+
+    .home-text {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .home-card {
+      bottom: -10%;
+      grid-template-columns: repeat(4, 1fr);
+
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .home {
+
+    .home-text {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 20px;
+
+        margin-bottom: 10px;
+      }
+
+      button {
+        font-size: 16px;
+      }
+    }
+
+    .home-card {
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.offers {
+
+
+  .sec-container {
+
+    .mainContent {
+      gap: 1rem;
+
+      .single-offer {
+        border-radius: 1rem;
+        overflow: hidden;
+        padding: .5rem;
+        box-shadow: var(--box-shasow);
+
+        .icon {
+          color: var(--textColor);
+          font-size: 20px;
+        }
+
+        small {
+          font-weight: 500;
+          color: var(--textColor);
+        }
+
+        .destImage {
+          height: 200px;
+          position: relative;
+          width: 100%;
+          border-radius: 1rem;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .discount {
+            position: relative;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background: var(--pimaryColor);
+            border-radius: 3rem;
+            font-size: 10px;
+            font-weight: 500;
+            color: var(--whiteColor);
+          }
+        }
+
+        .offerBody {
+          padding: 1rem;
+
+          .price {
+            justify-content: space-between;
+
+            h4 {
+              color: var(--blackColor);
+              font-weight: 700;
+              font-size: 1.1rem;
+            }
+
+            .status {
+              padding: 5px 10px;
+              color: var(--HoverColor);
+              background: var(--greyBg);
+              font-size: 13px;
+              font-weight: 600;
+              border-radius: 3rem;
+            }
+          }
+
+          .amenities {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 1rem 0;
+            gap: .5rem;
+
+            .singleAmenity {
+              border-radius: 5px;
+              background: var(--greyBg);
+              padding: 5px 10px;
+              display: flex;
+              gap: 5px;
+            }
+          }
+
+          button {
+            margin-top: 1.2rem;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding: .6rem;
+            color: var(--whiteColor);
+            font-weight: 600;
+            gap: .5rem;
+
+            .icon {
+              color: var(--whiteColor) !important;
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .offers {
+    .sec-container {
+      h2 {
+        font-size: 1.8rem;
+
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+}
